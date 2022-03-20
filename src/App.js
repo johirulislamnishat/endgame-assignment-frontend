@@ -1,17 +1,23 @@
 import "./App.css";
 import DashBoard from "./Components/Admin/Dashboard/DashBoard";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Components/Client/Home/Home";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route index element={<DashBoard />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route path="/home">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
