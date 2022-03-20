@@ -1,6 +1,5 @@
 import React from "react";
 import AppointmentHome from "../Appointments/AppointmentHome";
-import Blogs from "../Blogs/Blogs";
 import FooterMain from "../Footer/FooterMain";
 import Header from "../Headers/Header/Header";
 import TopBanner from "../Headers/TopBanner/TopBanner";

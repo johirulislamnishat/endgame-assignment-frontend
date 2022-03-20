@@ -15,24 +15,28 @@ const TopBanner = () => {
                 class="fill"
                 style={{
                   backgroundImage:
-                    "url('https://media.istockphoto.com/photos/technician-services-outside-ac-units-and-generator-picture-id1315493892?k=20&m=1315493892&s=612x612&w=0&h=_b5fWkSRiFLGlSxMpMASBwNMw7fdgSukwzTwvWtLO64=')",
+                    "url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80')",
                 }}
-              ></div>
-              <div class="carousel-caption">
-                <h2 class="animated fadeInLeft">Home Maintenance Check-ups</h2>
-                <p class="animated fadeInUp">
-                  We offer a free educational inspection service for existing
-                  homeowners interested in learning about the health and safety
-                  of their home.
-                </p>
-                <p class="animated fadeInUp">
-                  <Link
-                    to="/services"
-                    class="btn btn-transparent btn-rounded btn-large"
-                  >
-                    See More
-                  </Link>
-                </p>
+              >
+                <div class="carousel-caption">
+                  <h2 class="animated fadeInLeft">
+                    Best Medical Service In the World!!!
+                  </h2>
+                  <p class="animated fadeInUp">
+                    The best-known type of hospital is the general hospital,
+                    which typically has an emergency department to treat urgent
+                    health problems ranging from fire and accident victims to a
+                    heart attack.
+                  </p>
+                  <p class="animated fadeInUp">
+                    <Link
+                      to="/appointments"
+                      class="btn btn-transparent btn-rounded btn-large"
+                    >
+                      See More
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -44,27 +48,31 @@ const TopBanner = () => {
                 class="fill"
                 style={{
                   backgroundImage:
-                    "url('https://media.istockphoto.com/photos/creating-3d-figures-picture-id897895830?k=20&m=897895830&s=612x612&w=0&h=4_JhmJYtfyptLUaCvOqGh38_wGDnzR8sNS9vh0I0PJM=')",
+                    "url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=853&q=80')",
                 }}
-              ></div>
-              <div class="carousel-caption">
-                <h2 class="animated fadeInDown">Remodeling Together</h2>
-                <p class="animated fadeInUp">
-                  We provide free design service and discounted kitchen
-                  materials for your DIY kitchen project.
-                </p>
-                <p class="animated fadeInUp">
-                  <Link
-                    to="/services"
-                    class="btn btn-transparent btn-rounded btn-large"
-                  >
-                    See More
-                  </Link>
-                </p>
+              >
+                <div class="carousel-caption">
+                  <h2 class="animated fadeInDown">Health Care</h2>
+                  <p class="animated fadeInUp">
+                    The good news is that healthcare content marketing has a
+                    very large audience. The bad news is that competition is
+                    fierce, and the breadth of potential topics is almost too
+                    vast.
+                  </p>
+                  <p class="animated fadeInUp">
+                    <Link
+                      to="/appointment"
+                      class="btn btn-transparent btn-rounded btn-large"
+                    >
+                      See More
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <div id="myCarousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="item">
@@ -72,24 +80,25 @@ const TopBanner = () => {
                 class="fill"
                 style={{
                   backgroundImage:
-                    "url('https://media.istockphoto.com/photos/cropped-view-of-repairman-putting-screwdriver-in-tool-box-at-bathroom-picture-id1091652396?k=20&m=1091652396&s=612x612&w=0&h=CBOrW30FI7pm56JACVWLJ6DxOAMvQr2mwx8fAEl1N7c=')",
+                    "url('https://images.unsplash.com/photo-1628719749669-44015c344fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80')",
                 }}
-              ></div>
-              <div class="carousel-caption">
-                <h2 class="animated fadeInRight">Handyman Service</h2>
-                <p class="animated fadeInRight">
-                  When you use the Handy app or website, you’ll be connected
-                  with local handyman professionals who can take care of this
-                  work for you.
-                </p>
-                <p class="animated fadeInRight">
-                  <Link
-                    to="/services"
-                    class="btn btn-transparent btn-rounded btn-large"
-                  >
-                    See More
-                  </Link>
-                </p>
+              >
+                <div class="carousel-caption">
+                  <h2 class="animated fadeInRight">Emergency OT</h2>
+                  <p class="animated fadeInRight">
+                    This indicates that there are still topical opportunities
+                    for healthcare content marketers that want to go deep in
+                    areas that aren’t as well-covered.
+                  </p>
+                  <p class="animated fadeInRight">
+                    <Link
+                      to="/appointment"
+                      class="btn btn-transparent btn-rounded btn-large"
+                    >
+                      See More
+                    </Link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>

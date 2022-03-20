@@ -10,13 +10,16 @@
 }
 
 .carousel-caption {
+  padding-top: 180px;
   padding-bottom: 80px;
 }
 
 h2 {
   font-size: 60px;
+  color: #000;
 }
 p {
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -38,12 +41,14 @@ p {
  */
 .btn-transparent {
   background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: rgb(2, 0, 14);
+  font-size: 24px;
+  font-weight: 600;
+  border: 3px solid rgb(8, 2, 44);
 }
-.btn-transparent:hover {
+/* .btn-transparent:hover {
   background-color: #fff;
-}
+} */
 
 .btn-rounded {
   border-radius: 70px;
