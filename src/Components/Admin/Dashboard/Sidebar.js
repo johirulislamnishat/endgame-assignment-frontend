@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { useRouteMatch, NavLink } from "react-router-dom";
+import useAuth from "../../../Authentication/Hooks/useAuth";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
+  const { logOut } = useAuth();
+
   let { url } = useRouteMatch();
   const trigger = useRef(null);
   const sidebar = useRef(null);
@@ -113,6 +116,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               className="text-base  font-semibold nav-items"
             >
               Dashboard
+            </NavLink>
+
+            <NavLink
+              onClick={logOut}
+              to="/"
+              className="text-base  font-semibold nav-items"
+            >
+              Logout
             </NavLink>
           </div>
         </div>
