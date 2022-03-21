@@ -3,6 +3,7 @@ import DashBoard from "./Components/Admin/Dashboard/DashBoard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Client/Home/Home";
 import Appointment from "./Components/Client/Appointments/Appointment";
+import Dashboard from "./Components/Admin/Dashboard/DashBoard";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
 
           <Route path="/appointment">
             <Appointment />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
         </Switch>
       </Router>

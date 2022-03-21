@@ -10,7 +10,7 @@ const TopBanner = () => {
       <Carousel showThumbs={false} autoPlay={2000} infiniteLoop={true}>
         <div id="myCarousel" class="carousel slide">
           <div class="carousel-middle">
-            <div class="item active">
+            <div class="items running">
               <div
                 class="fill"
                 style={{

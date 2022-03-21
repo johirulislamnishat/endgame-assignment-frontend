@@ -1,9 +1,11 @@
 import React from "react";
 
 const DashHeader = ({ sidebarOpen, setSidebarOpen }) => {
+  // const { user, logOut } = useAuth();
+
   return (
     <>
-      <nav class="fixed z-30 w-full bg-white border-b-2 border-indigo-600">
+      <div class="fixed z-30 w-full bg-white border-b-2 border-indigo-600">
         <div class="px-6 py-3">
           <div class="flex items-center justify-between">
             <div class="flex items-center justify-start">
@@ -100,7 +102,7 @@ const DashHeader = ({ sidebarOpen, setSidebarOpen }) => {
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 };

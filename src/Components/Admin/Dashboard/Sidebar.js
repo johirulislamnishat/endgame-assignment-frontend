@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useRouteMatch, NavLink } from "react-router-dom";
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
+  let { url } = useRouteMatch();
   const trigger = useRef(null);
   const sidebar = useRef(null);
 
@@ -73,17 +74,26 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
           {/* Links */}
           <div className="flex flex-col gap-4">
+            {/* admin  */}
             <NavLink
-              to="/dashboard"
+              to={`${url}/admin-dashboard`}
               className="text-base  text-white font-semibold pl-3"
             >
-              Home
+              Dashboard
             </NavLink>
             <NavLink
-              to="/dashboard"
+              to={`${url}/doctors`}
               className="text-base  text-white font-semibold pl-3"
             >
               Doctors
+            </NavLink>
+
+            {/* client  */}
+            <NavLink
+              to={`${url}/dashboard`}
+              className="text-base  text-white font-semibold pl-3"
+            >
+              Dashboard
             </NavLink>
           </div>
         </div>
