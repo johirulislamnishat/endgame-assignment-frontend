@@ -91,7 +91,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               to={`${url}/up-doctor`}
               className="text-base   font-semibold nav-items"
             >
-              Doctors
+              Manage Doctors
+            </NavLink>
+
+            <NavLink
+              to={`${url}/add-blog`}
+              className="text-base   font-semibold nav-items"
+            >
+              Add Blog
             </NavLink>
 
             {/* client  */}
