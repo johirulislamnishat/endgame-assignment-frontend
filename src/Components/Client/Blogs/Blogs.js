@@ -1,9 +1,9 @@
 import React from "react";
 
-const OurTeam = () => {
+const Blogs = () => {
   return (
     <>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+      <div class="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
         {/* Card 1 */}
         <div class="rounded overflow-hidden shadow-md">
           <img class="w-full" src="/mountain.jpg" alt="Mountain" />
@@ -102,4 +102,4 @@ const OurTeam = () => {
   );
 };
 
-export default OurTeam;
+export default Blogs;

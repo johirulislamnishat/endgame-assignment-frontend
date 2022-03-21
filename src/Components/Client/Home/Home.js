@@ -5,7 +5,7 @@ import Header from "../Headers/Header/Header";
 import TopBanner from "../Headers/TopBanner/TopBanner";
 import MiddleHospitalInfo from "../HospitalInfo/MiddleHospitalInfo";
 import TopHospitalInfo from "../HospitalInfo/TopHospitalInfo";
-import OurTeam from "../OurTeam/OurTeam";
+import Blogs from "../Blogs/Blogs";
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <TopHospitalInfo />
       <AppointmentHome />
       <MiddleHospitalInfo />
-      <OurTeam />
+      <Blogs />
       <FooterMain />
     </>
   );

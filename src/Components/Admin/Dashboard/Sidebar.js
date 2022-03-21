@@ -34,10 +34,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
 
   return (
     <>
-      <div className="lg:w-64">
+      <div className="lg:w-64 bg-gray-800">
         {/* Sidebar backdrop (mobile only) */}
         <div
-          className={`fixed inset-0 bg-gray-900 bg-opacity-30 z-40 lg:hidden lg:z-auto transition-opacity duration-200 ${
+          className={`fixed inset-0  bg-opacity-30 z-40 lg:hidden lg:z-auto transition-opacity duration-200 ${
             sidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
           aria-hidden="true"
@@ -88,7 +88,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               Add Doctor
             </NavLink>
             <NavLink
-              to={`${url}/doctors`}
+              to={`${url}/up-doctor`}
               className="text-base   font-semibold nav-items"
             >
               Doctors

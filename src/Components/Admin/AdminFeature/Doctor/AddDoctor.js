@@ -2,12 +2,7 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import "../../../../App.css";
-
 const AddDoctor = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const {
     register,
     handleSubmit,
@@ -16,8 +11,9 @@ const AddDoctor = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    // console.log(data);
     axios
-      .post("http://localhost:8000/doctors", data)
+      .post("http://localhost:8000/doctors/", data)
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {
@@ -37,20 +33,6 @@ const AddDoctor = () => {
           <h1 className="table-name">Add A New Doctor</h1>
 
           <form className="mt-5" onSubmit={handleSubmit(onSubmit)}>
-            {/* category  */}
-            <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Category</label>
-              <input
-                {...register("category")}
-                type="text"
-                className="form-control"
-                placeholder="Enter Category"
-                required={true}
-              />
-
-              {errors.exampleRequired && <span>This field is required</span>}
-            </div>
-
             {/* name  */}
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">Doctor Name</label>
@@ -96,7 +78,7 @@ const AddDoctor = () => {
             {/* education */}
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">Education</label>
-              <textarea
+              <input
                 {...register("education")}
                 type="text"
                 className="form-control"
@@ -189,7 +171,7 @@ const AddDoctor = () => {
                 >
                   <strong>imgur</strong>
                 </a>
-                & Paste the image link here
+                & Or Others Image Link Paste Here
               </label>
               <input
                 {...register("img")}
@@ -198,6 +180,20 @@ const AddDoctor = () => {
                 placeholder="Upload Picture in imgur and paste the img link here"
                 required={true}
               />
+              {errors.exampleRequired && <span>This field is required</span>}
+            </div>
+
+            {/* Rating  */}
+            <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Rating</label>
+              <input
+                {...register("rating")}
+                type="number"
+                className="form-control"
+                placeholder="Enter Rating"
+                required={false}
+              />
+
               {errors.exampleRequired && <span>This field is required</span>}
             </div>
 

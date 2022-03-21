@@ -120,7 +120,7 @@ const FooterMain = () => {
                 class="
             uppercase
             font-semibold
-            mb-4
+            mb-1
             flex
             items-center
             justify-center
@@ -147,20 +147,20 @@ const FooterMain = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div class="">
-              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+              <h6 class="uppercase font-semibold mb-1 flex justify-center md:justify-start">
                 Services
               </h6>
-              <p class="mb-4">
+              <p class="mb-1">
                 <a href="#!" class="text-gray-600">
                   Gynaecology
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-1">
                 <a href="#!" class="text-gray-600">
                   Surgery
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-1">
                 <a href="#!" class="text-gray-600">
                   Medicine
                 </a>
@@ -172,20 +172,20 @@ const FooterMain = () => {
               </p>
             </div>
             <div class="">
-              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+              <h6 class="uppercase font-semibold mb-1 flex justify-center md:justify-start">
                 Useful links
               </h6>
-              <p class="mb-4">
+              <p class="mb-1">
                 <a href="#!" class="text-gray-600">
                   Pricing
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-1">
                 <a href="#!" class="text-gray-600">
                   Medicine
                 </a>
               </p>
-              <p class="mb-4">
+              <p class="mb-1">
                 <a href="#!" class="text-gray-600">
                   Emergency
                 </a>
@@ -197,10 +197,10 @@ const FooterMain = () => {
               </p>
             </div>
             <div class="">
-              <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+              <h6 class="uppercase font-semibold mb-1 flex justify-center md:justify-start">
                 Contact
               </h6>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center justify-center md:justify-start mb-1">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -218,7 +218,7 @@ const FooterMain = () => {
                 </svg>
                 New York, NY 10012, US
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center justify-center md:justify-start mb-1">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -236,7 +236,7 @@ const FooterMain = () => {
                 </svg>
                 info@emergency.com
               </p>
-              <p class="flex items-center justify-center md:justify-start mb-4">
+              <p class="flex items-center justify-center md:justify-start mb-1">
                 <svg
                   aria-hidden="true"
                   focusable="false"
