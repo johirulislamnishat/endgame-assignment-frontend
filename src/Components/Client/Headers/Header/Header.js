@@ -14,7 +14,6 @@ const navigation = [
   { name: "Appointment", to: "/appointment", current: false },
   { name: "Laboratory", to: "/lab", current: false },
   { name: "About Us", to: "/about", current: false },
-  { name: "Contact Us", to: "/contact", current: false },
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#" },

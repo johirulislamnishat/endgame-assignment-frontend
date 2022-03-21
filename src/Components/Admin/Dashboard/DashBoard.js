@@ -3,6 +3,7 @@ import { Switch, Route, useRouteMatch } from "react-router-dom";
 import AdminDash from "../AdminFeature/AdminDash";
 import AddBlogs from "../AdminFeature/Blogs/AddBlogs";
 import AddDoctor from "../AdminFeature/Doctor/AddDoctor";
+import AddLabTest from "../AdminFeature/LabTest/AddLabTest";
 import ClientDash from "../ClientFeature/ClientDash";
 import DashHeader from "./DashHeader";
 import Sidebar from "./Sidebar";
@@ -28,6 +29,9 @@ const DashBoard = () => {
               </Route>
               <Route path={`${path}/add-blog`}>
                 <AddBlogs />
+              </Route>
+              <Route path={`${path}/add-test`}>
+                <AddLabTest />
               </Route>
 
               {/* client */}

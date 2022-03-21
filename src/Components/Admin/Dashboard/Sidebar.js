@@ -100,6 +100,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             >
               Add Blog
             </NavLink>
+            <NavLink
+              to={`${url}/add-test`}
+              className="text-base   font-semibold nav-items"
+            >
+              Add Test
+            </NavLink>
 
             {/* client  */}
             <NavLink

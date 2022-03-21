@@ -15,7 +15,7 @@ const Blogs = () => {
 
   return (
     <>
-      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-10">
         <h1 className="text-center py-10 font-medium text-2xl text-gray-800">
           Medical Blogs
         </h1>
