@@ -77,13 +77,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             {/* admin  */}
             <NavLink
               to={`${url}/admin-dashboard`}
-              className="text-base  text-white font-semibold pl-3"
+              className="text-base  font-semibold nav-items"
             >
               Dashboard
             </NavLink>
             <NavLink
+              to={`${url}/add-doctor`}
+              className="text-base   font-semibold nav-items"
+            >
+              Add Doctor
+            </NavLink>
+            <NavLink
               to={`${url}/doctors`}
-              className="text-base  text-white font-semibold pl-3"
+              className="text-base   font-semibold nav-items"
             >
               Doctors
             </NavLink>
@@ -91,7 +97,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             {/* client  */}
             <NavLink
               to={`${url}/dashboard`}
-              className="text-base  text-white font-semibold pl-3"
+              className="text-base  font-semibold nav-items"
             >
               Dashboard
             </NavLink>
