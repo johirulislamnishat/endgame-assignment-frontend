@@ -13,7 +13,7 @@ const AddLabTest = () => {
   const onSubmit = (data) => {
     // console.log(data);
     axios
-      .post("http://localhost:8000/lab/", data)
+      .post("https://rocky-mountain-61787.herokuapp.com/lab/", data)
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {

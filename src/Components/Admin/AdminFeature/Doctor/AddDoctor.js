@@ -13,7 +13,7 @@ const AddDoctor = () => {
   const onSubmit = (data) => {
     // console.log(data);
     axios
-      .post("http://localhost:8000/doctors/", data)
+      .post("https://rocky-mountain-61787.herokuapp.com/doctors/", data)
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {

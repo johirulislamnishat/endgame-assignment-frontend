@@ -30,7 +30,7 @@ const BookingModal = ({ date, open, handleClose, appointment }) => {
     };
 
     //send data to server
-    fetch("http://localhost:8000/appointments", {
+    fetch("https://rocky-mountain-61787.herokuapp.com/appointments", {
       method: "POST",
       headers: {
         "content-type": "application/json",

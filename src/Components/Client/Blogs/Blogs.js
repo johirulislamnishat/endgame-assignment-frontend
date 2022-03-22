@@ -6,7 +6,7 @@ const Blogs = () => {
   // const { isLoading } = useAuth();
 
   useEffect(() => {
-    const url = "http://localhost:8000/blogs/";
+    const url = "https://rocky-mountain-61787.herokuapp.com/blogs/";
     fetch(url)
       .then((res) => res.json())
       // .then((data) => console.log(data));

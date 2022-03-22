@@ -35,6 +35,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     return () => document.removeEventListener("keydown", keyHandler);
   });
 
+  const { admin } = useAuth();
+
   return (
     <>
       <div className="lg:w-64 bg-gray-800">
@@ -78,51 +80,69 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           {/* Links */}
           <div className="flex flex-col gap-4">
             {/* admin  */}
-            <NavLink
-              to={`${url}/admin-dashboard`}
-              className="text-base  font-semibold nav-items"
-            >
-              Dashboard
-            </NavLink>
-            <NavLink
-              to={`${url}/add-admin`}
-              className="text-base   font-semibold nav-items"
-            >
-              Add Admin
-            </NavLink>
-            <NavLink
-              to={`${url}/add-doctor`}
-              className="text-base   font-semibold nav-items"
-            >
-              Add Doctor
-            </NavLink>
-            <NavLink
-              to={`${url}/manage-doctor`}
-              className="text-base   font-semibold nav-items"
-            >
-              Manage Doctors
-            </NavLink>
+            {admin ? (
+              <>
+                <NavLink
+                  to={`${url}/manage-patient`}
+                  className="text-base  font-semibold nav-items"
+                >
+                  Manage Patient
+                </NavLink>
+                <NavLink
+                  to={`${url}/add-admin`}
+                  className="text-base   font-semibold nav-items"
+                >
+                  Add Admin
+                </NavLink>
+                <NavLink
+                  to={`${url}/add-doctor`}
+                  className="text-base   font-semibold nav-items"
+                >
+                  Add Doctor
+                </NavLink>
+                <NavLink
+                  to={`${url}/manage-doctor`}
+                  className="text-base   font-semibold nav-items"
+                >
+                  Manage Doctors
+                </NavLink>
+                <NavLink
+                  to={`${url}/manage-test`}
+                  className="text-base   font-semibold nav-items"
+                >
+                  Manage Tests
+                </NavLink>
 
-            <NavLink
-              to={`${url}/add-blog`}
-              className="text-base   font-semibold nav-items"
-            >
-              Add Blog
-            </NavLink>
-            <NavLink
-              to={`${url}/add-test`}
-              className="text-base   font-semibold nav-items"
-            >
-              Add Test
-            </NavLink>
-
-            {/* client  */}
-            <NavLink
-              to={`${url}/dashboard`}
-              className="text-base  font-semibold nav-items"
-            >
-              Dashboard
-            </NavLink>
+                <NavLink
+                  to={`${url}/add-blog`}
+                  className="text-base   font-semibold nav-items"
+                >
+                  Add Blog
+                </NavLink>
+                <NavLink
+                  to={`${url}/add-test`}
+                  className="text-base   font-semibold nav-items"
+                >
+                  Add Test
+                </NavLink>
+              </>
+            ) : (
+              <>
+                {/* client  */}
+                <NavLink
+                  to={`${url}/dashboard`}
+                  className="text-base  font-semibold nav-items"
+                >
+                  Dashboard
+                </NavLink>
+                <NavLink
+                  to={`${url}/manageappointment`}
+                  className="text-base  font-semibold nav-items"
+                >
+                  My Appointment
+                </NavLink>
+              </>
+            )}
 
             <NavLink
               onClick={logOut}

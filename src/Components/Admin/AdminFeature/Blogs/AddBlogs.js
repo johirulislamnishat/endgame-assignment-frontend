@@ -13,7 +13,7 @@ const AddBlogs = () => {
   const onSubmit = (data) => {
     // console.log(data);
     axios
-      .post("http://localhost:8000/blogs/", data)
+      .post("https://rocky-mountain-61787.herokuapp.com/blogs/", data)
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {

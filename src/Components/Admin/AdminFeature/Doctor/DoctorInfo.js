@@ -29,7 +29,7 @@ const DoctorInfo = ({ doctor }) => {
   const handleDeleteDoctor = (id) => {
     const proceed = window.confirm("Are you sure you want to delete?");
     if (proceed) {
-      const url = `http://localhost:8000/doctors/${id}`;
+      const url = `https://rocky-mountain-61787.herokuapp.com/doctors/${id}`;
       fetch(url, {
         method: "DELETE",
       })

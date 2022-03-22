@@ -13,7 +13,7 @@ const AddAdmin = () => {
   const onSubmit = (data) => {
     // console.log(data);
     axios
-      .post("http://localhost:8000/users/admin/", data)
+      .post("https://rocky-mountain-61787.herokuapp.com/users/admin/", data)
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {

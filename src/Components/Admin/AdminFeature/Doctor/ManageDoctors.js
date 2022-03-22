@@ -39,7 +39,7 @@ const ManageDoctors = () => {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/doctors")
+    fetch("https://rocky-mountain-61787.herokuapp.com/doctors")
       .then((res) => res.json())
       .then((data) => setDoctors(data));
   }, []);

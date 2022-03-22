@@ -6,24 +6,18 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import React, { useEffect, useState } from "react";
-import PatientData from "./PatientData";
+import ManageTestData from "./ManageTestData";
 
 const columns = [
-  { id: "id", label: "ID", minWidth: 20 },
-  { id: "patientName", label: "Patient Name", minWidth: 170 },
-  { id: "patientNumber", label: "Patient Number", minWidth: 120 },
-  { id: "patientEmail", label: "Patient Email", minWidth: 120 },
-  { id: "patient_age", label: "patient_age", minWidth: 40 },
-  { id: "patient_weight", label: "patient_weight", minWidth: 40 },
-  { id: "fees", label: "Fees", minWidth: 50 },
-  { id: "date", label: "Date", minWidth: 140 },
-  { id: "status", label: "Status", minWidth: 100 },
-
+  { id: "id", label: "Test ID", minWidth: 20 },
+  { id: "type", label: "Test Type", minWidth: 170 },
+  { id: "name", label: "Test Name", minWidth: 250 },
+  { id: "Price", label: "Test Price", minWidth: 80 },
   //   { id: "update", label: "Update" },
   { id: "delete", label: "Delete" },
 ];
 
-const ManagePatients = () => {
+const ManageTest = () => {
   //   table
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(15);
@@ -37,19 +31,18 @@ const ManagePatients = () => {
     setPage(0);
   };
 
-  // patient data
-  const [appointments, setAppointments] = useState([]);
+  // test data
+  const [labs, setLabs] = useState([]);
 
   useEffect(() => {
-    fetch("https://rocky-mountain-61787.herokuapp.com/appointments")
+    fetch("https://rocky-mountain-61787.herokuapp.com/lab/")
       .then((res) => res.json())
-      .then((data) => setAppointments(data));
+      .then((data) => setLabs(data));
   }, []);
-
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-10">
-        <div className="table-name text-center">Manage Patient</div>
+        <div className="table-name text-center">Test List And Price</div>
         <Paper sx={{ width: "100%", overflow: "hidden" }}>
           <TableContainer sx={{ maxHeight: 550 }}>
             <Table stickyHeader aria-label="sticky table">
@@ -75,14 +68,11 @@ const ManagePatients = () => {
               </TableHead>
 
               <TableBody>
-                {appointments
+                {labs
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                  .map((appointment) => {
+                  .map((lab) => {
                     return (
-                      <PatientData
-                        key={appointment._id}
-                        appointment={appointment}
-                      ></PatientData>
+                      <ManageTestData key={lab._id} lab={lab}></ManageTestData>
                     );
                   })}
               </TableBody>
@@ -92,7 +82,7 @@ const ManagePatients = () => {
           <TablePagination
             rowsPerPageOptions={[10, 25, 100]}
             component="div"
-            count={appointments.length}
+            count={labs.length}
             rowsPerPage={rowsPerPage}
             page={page}
             onPageChange={handleChangePage}
@@ -104,4 +94,4 @@ const ManagePatients = () => {
   );
 };
 
-export default ManagePatients;
+export default ManageTest;

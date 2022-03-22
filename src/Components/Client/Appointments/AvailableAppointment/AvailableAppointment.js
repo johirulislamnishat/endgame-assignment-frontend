@@ -5,7 +5,7 @@ const AvailableAppointment = ({ date }) => {
   const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    const url = "http://localhost:8000/doctors";
+    const url = "https://rocky-mountain-61787.herokuapp.com/doctors";
     fetch(url)
       .then((res) => res.json())
       // .then(data => console.log(data))

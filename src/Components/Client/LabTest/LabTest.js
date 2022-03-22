@@ -23,7 +23,7 @@ const LabTest = () => {
   // const { isLoading } = useAuth();
 
   useEffect(() => {
-    const url = "http://localhost:8000/lab/";
+    const url = "https://rocky-mountain-61787.herokuapp.com/lab/";
     fetch(url)
       .then((res) => res.json())
       // .then((data) => console.log(data));

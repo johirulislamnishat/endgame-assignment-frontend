@@ -8,6 +8,7 @@ import About from "./Components/Client/About/About";
 import AuthProvider from "./Authentication/Context/AuthProvider";
 import Login from "./Authentication/Login/Login";
 import Registration from "./Authentication/Registration/Registration";
+import NotFound from "./Components/Client/SinglePages/NotFound";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route path="/dashboard">
               <Dashboard />
+            </Route>
+            <Route exact path="/*">
+              <NotFound />
             </Route>
           </Switch>
         </Router>
