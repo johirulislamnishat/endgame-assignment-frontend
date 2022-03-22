@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
+import AddAdmin from "../AdminFeature/AddAdmin";
 import AdminDash from "../AdminFeature/AdminDash";
 import AddBlogs from "../AdminFeature/Blogs/AddBlogs";
 import AddDoctor from "../AdminFeature/Doctor/AddDoctor";
+import ManageDoctors from "../AdminFeature/Doctor/ManageDoctors";
 import AddLabTest from "../AdminFeature/LabTest/AddLabTest";
 import ClientDash from "../ClientFeature/ClientDash";
 import DashHeader from "./DashHeader";
@@ -27,11 +29,17 @@ const DashBoard = () => {
               <Route path={`${path}/add-doctor`}>
                 <AddDoctor />
               </Route>
+              <Route path={`${path}/manage-doctor`}>
+                <ManageDoctors />
+              </Route>
               <Route path={`${path}/add-blog`}>
                 <AddBlogs />
               </Route>
               <Route path={`${path}/add-test`}>
                 <AddLabTest />
+              </Route>
+              <Route path={`${path}/add-admin`}>
+                <AddAdmin />
               </Route>
 
               {/* client */}

@@ -85,13 +85,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
               Dashboard
             </NavLink>
             <NavLink
+              to={`${url}/add-admin`}
+              className="text-base   font-semibold nav-items"
+            >
+              Add Admin
+            </NavLink>
+            <NavLink
               to={`${url}/add-doctor`}
               className="text-base   font-semibold nav-items"
             >
               Add Doctor
             </NavLink>
             <NavLink
-              to={`${url}/up-doctor`}
+              to={`${url}/manage-doctor`}
               className="text-base   font-semibold nav-items"
             >
               Manage Doctors
